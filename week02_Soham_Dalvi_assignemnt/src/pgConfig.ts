@@ -4,7 +4,7 @@ const pool = new Pool({
  user: 'postgres',
  host: 'localhost',
  database: "postgres",
- password: "tvsvictor", //Change this with your password 
+ password: "tvsvictor", 
  port: 5432,
 });
 export default pool;
