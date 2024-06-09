@@ -88,7 +88,7 @@ export default Customer;
 
 /*   Sample input for model testing as
 {
- "id": "CLI_001",
+ "id": "CUST_001",      
  "organizationId": "ORG_001", // Referenced to Organization table
  "msaValidFrom": "2024-03-10",
  "msaValidUpto": "2025-01-10",
