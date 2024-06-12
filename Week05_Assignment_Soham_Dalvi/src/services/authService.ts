@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import Employee from '../models/employeeModel';
 import credentials from '../common/credentials';
 
-export async function registerEmployee (name: string, email: string, password: string)  {
+export async function registerEmployee (name: string, email: string, password: string , role : string)  {
   const hashedPassword = await bcrypt.hash(password, 10); //used bcrypt for password hashing
   
   const employee = await Employee.create({ name, email, password: hashedPassword, assignedShiftHours: 8, role });
